@@ -1,299 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MART HAPNI</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-  :root {
-    --main-color: #e67e22;
-    --accent-color: #d35400;
-    --bg-color: #fafafa;
-    --text-color: #2d3436;
-    --white: #fff;
-    --shadow: rgba(0,0,0,0.12);
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: var(--bg-color);
-    color: var(--text-color);
-  }
-
-  header {
-    background: var(--main-color);
-    color: var(--white);
-    padding: 25px 20px;
-    text-align: center;
-    box-shadow: 0 2px 8px var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  header h1 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 2.4rem;
-    letter-spacing: 2px;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-
-  nav a:hover {
-    color: var(--accent-color);
-  }
-
-  .hero {
-    background: url('4.jpg') center center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-  }
-
-  .hero-content {
-    position: relative;
-    color: white;
-    max-width: 600px;
-  }
-
-  .hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    letter-spacing: 1.5px;
-  }
-
-  .hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-    font-weight: 500;
-  }
-
-  .btn-primary {
-    background: var(--accent-color);
-    color: var(--white);
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  .btn-primary:hover {
-    background: #a84300;
-  }
-
-  main {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-
-  h2.section-title {
-    font-size: 2.4rem;
-    text-align: center;
-    margin-bottom: 45px;
-    color: var(--accent-color);
-    font-weight: 600;
-  }
-
-  .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 30px;
-  }
-
-  .product-card {
-    background: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 8px 15px var(--shadow);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  }
-
-  .product-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .product-info {
-    padding: 20px;
-  }
-
-  .product-info h3 {
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: var(--main-color);
-  }
-
-  .product-info p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 15px;
-  }
-
-  .price {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--accent-color);
-    margin-bottom: 15px;
-  }
-
-  .btn-buy {
-    background: var(--main-color);
-    color: var(--white);
-    border: none;
-    padding: 10px 22px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .btn-buy:hover {
-    background: #b45e00;
-  }
-
-  section.contact {
-    background: #fff;
-    padding: 50px 20px;
-    margin-top: 70px;
-    text-align: center;
-  }
-
-  section.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-    color: var(--accent-color);
-  }
-
-  section.contact p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: var(--text-color);
-  }
-
-  footer {
-    background: var(--accent-color);
-    color: var(--white);
-    text-align: center;
-    padding: 18px 20px;
-    margin-top: 60px;
-    font-size: 0.9rem;
-  }
-
-  @media(max-width: 480px){
-    .hero-content h2 {
-      font-size: 2rem;
-    }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konter hp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1> Selamat Datang Di Konter Hp</h1>
+      <p><h3></h3></p>
+    <nav>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </nav>
+  </header>
 
-<header>
-  <h1>MART AYAM PETELUR</h1>
-  <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#produk">Produk</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
-</header>
+  <main>
+    <section class="produk">
+      <h2>Daftar Produk</h2>
+      <div class="produk-container" id="produk-list" img="">
 
-<section class="hero" id="beranda">
-  <div class="hero-content">
-    <h2>Ayam Petelur Berkualitas, Harga Bersahabat.</h2>
-    <p>Jual Ayam Petelur Muda, Produksi, dan Afkir untuk Peternakan Anda.</p>
-    <a href="#produk" class="btn-primary">Lihat Produk</a>
-  </div>
-</section>
+        <!-- Produk ditambahkan melalui JavaScript -->
+      </div>
+    </section>
 
-<main>
-  <section id="produk">
-    <h2 class="section-title">Produk Kami</h2>
-    <div class="products">
-      <article class="product-card">
-        <img src="2.jpg" alt="Ayam Petelur Muda" />
-        <div class="product-info">
-          <h3>Ayam Petelur Muda</h3>
-          <p>Usia 3 bulan, siap bertelur dalam waktu dekat.</p>
-          <div class="price">Rp 45.000 / ekor</div>
-          <button class="btn-buy" onclick="alert('Terima kasih sudah memesan Ayam Petelur Muda!')">Pesan Sekarang</button>
-        </div>
-      </article>
-      <article class="product-card">
-        <img src="1.jpg" alt="Ayam Produksi" />
-        <div class="product-info">
-          <h3>Ayam Produksi</h3>
-          <p>Usia 5 bulan, produksi telur aktif dan stabil.</p>
-          <div class="price">Rp 60.000 / ekor</div>
-          <button class="btn-buy" onclick="alert('Terima kasih sudah memesan Ayam Produksi!')">Pesan Sekarang</button>
-        </div>
-      </article>
-      <article class="product-card">
-        <img src="3.jpg" alt="Ayam Afkir" />
-        <div class="product-info">
-          <h3>Ayam Afkir</h3>
-          <p>Usia lebih dari 12 bulan, cocok untuk konsumsi daging.</p>
-          <div class="price">Rp 25.000 / ekor</div>
-          <button class="btn-buy" onclick="alert('Terima kasih sudah memesan Ayam Afkir!')">Pesan Sekarang</button>
-        </div>
-      </article>
-    </div>
-  </section>
+    <section class="keranjang">
+      <h2>Keranjang pembeli</h2>
+      <ul id="keranjang-list"></ul>
+      <p>Total: <span id="total-harga">Rp 0</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+  </main>
 
-  <section class="contact" id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>📞 WhatsApp: 0822-8943-2169</p>
-    <p>📧 Email: kakahmart15042005@gmail.com</p>
-    <p>📍 Alamat: Jl. Lubuk Bernai No. 10, Tanjung Jabung Barat, Jambi</p>
-  </section>
-</main>
+  <footer>
+    <p>&copy; 2025 konter nand | WhatsApp: 085212376846</p>
+  </footer>
 
-<footer>
-  &copy; 2025 MART AYAM PETELUR
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
